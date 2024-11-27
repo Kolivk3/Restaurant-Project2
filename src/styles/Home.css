@@ -1,0 +1,124 @@
+/* Home.css */
+
+.home-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: url('https://github.com/Kolivk3/StreetFood/blob/main/back2.jpg?raw=true') no-repeat center center/cover; /* Background image */
+  color: #f1f1f1; /* Light text color */
+  position: relative;
+  min-height: 100vh;
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay to ensure text is visible */
+  z-index: 1;
+}
+
+.hero-section {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.85); /* Slightly opaque white */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+  z-index: 2; /* Ensure this appears on top of the overlay */
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #d76a31; /* Soft coral color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow to improve visibility on image */
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #333; /* Dark gray for better readability */
+}
+
+.explore-menu-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #d76a31; /* Coral background for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.explore-menu-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(215, 106, 49, 0.5); /* Lighter shadow */
+}
+
+.features-section {
+  margin: 30px 0;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Teal color for headings */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Shadow for better readability */
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #3a7ca5; /* Teal for icons */
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #4f4f4f; /* Dark gray for feature headings */
+}
+
+.feature p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666; /* Light gray for text */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

@@ -1,0 +1,135 @@
+/* Contact.css */
+
+.contact-container {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  padding: 20px;
+}
+
+.contact-header {
+  background: linear-gradient(to right, #f76b1c, #ff9a57);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 8px;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.contact-form-section {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background: #f76b1c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #ff9a57;
+}
+
+/* Contact Info Section */
+.contact-info {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #f76b1c;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact-info h3 {
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Social Media Footer */
+.contact-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-footer h2 {
+  font-size: 1.8rem;
+  color: #f76b1c;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #f76b1c;
+}
+
+.icon i {
+  font-family: "Font Awesome 5 Free";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 0 10px;
+  }
+}
