@@ -16,11 +16,11 @@ const About = () => {
         <section className="about-section">
           <h2>Our Story</h2>
           <p>
-            At <strong>My Restaurant</strong>, we started with a passion for
-            creating culinary experiences that bring people together. Over the
-            years, we have perfected the art of crafting flavors that delight
-            the senses, serving you fresh and delicious food in a warm,
-            welcoming environment.
+            At <strong>Street's</strong>, we started with a passion for creating
+            culinary experiences that bring people together. Over the years, we
+            have perfected the art of crafting flavors that delight the senses,
+            serving you fresh and delicious food in a warm, welcoming
+            environment.
           </p>
         </section>
 

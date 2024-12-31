@@ -73,6 +73,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Container for the entire page */
@@ -82,6 +83,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #e8e8e4;
 }
 
 /* Heading */

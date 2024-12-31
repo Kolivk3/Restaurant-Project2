@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="hero-section">
-        <h1>Welcome to FancyBites</h1>
+        <h1>Welcome to Street's</h1>
         <p>
           Your ultimate destination for delicious food and delightful vibes!
         </p>

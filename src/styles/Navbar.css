@@ -4,18 +4,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(45deg, #f76b1c, #ff9a57);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(128, 99, 3, 0.1); /* Fully transparent background with slight white tint */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 8px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support for backdrop filter */
 }
 
 /* Logo */
 .navbar-logo a {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -33,7 +36,7 @@
 
 .navbar-links li a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-size: 1rem;
   padding: 5px 10px;
   border-radius: 4px;
@@ -54,7 +57,7 @@
 @media (max-width: 768px) {
   .navbar-links {
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000000; /* Transparent black background for mobile */
     position: absolute;
     top: 60px;
     right: 0;

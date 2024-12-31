@@ -11,8 +11,8 @@ const Menu = () => {
       price: 12,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/bhel.jpg?raw=true",
-      cuisine: "Italian",
-      isVegan: false,
+      cuisine: "",
+      isVegan: true,
       isGlutenFree: false,
     },
     {
@@ -22,7 +22,7 @@ const Menu = () => {
       price: 10,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/dabeli.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "",
       isVegan: true,
       isGlutenFree: false,
     },
@@ -33,7 +33,7 @@ const Menu = () => {
       price: 9,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/dhokla.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "",
       isVegan: false,
       isGlutenFree: false,
     },
@@ -44,9 +44,9 @@ const Menu = () => {
       price: 8,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/dosa.jpg?raw=true",
-      cuisine: "American",
+      cuisine: "",
       isVegan: false,
-      isGlutenFree: true,
+      isGlutenFree: false,
     },
     {
       id: 5,
@@ -55,7 +55,7 @@ const Menu = () => {
       price: 5,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/idli.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "",
       isVegan: false,
       isGlutenFree: false,
     },
@@ -66,9 +66,9 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/jalebi.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "",
       isVegan: false,
-      isGlutenFree: false,
+      isGlutenFree: true,
     },
     {
       id: 7,
@@ -77,7 +77,7 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/kachori.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "fry",
       isVegan: false,
       isGlutenFree: false,
     },
@@ -88,7 +88,7 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/misal.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "pav",
       isVegan: false,
       isGlutenFree: false,
     },
@@ -100,8 +100,8 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/panipuri2.jpg?raw=true",
-      cuisine: "Italian",
-      isVegan: false,
+      cuisine: "",
+      isVegan: true,
       isGlutenFree: false,
     },
     {
@@ -111,7 +111,7 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/pavbhaji.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "pav",
       isVegan: false,
       isGlutenFree: false,
     },
@@ -134,8 +134,8 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/ragda.jpg?raw=true",
-      cuisine: "Italian",
-      isVegan: false,
+      cuisine: "",
+      isVegan: true,
       isGlutenFree: false,
     },
     {
@@ -145,7 +145,7 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/samosa.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "fry",
       isVegan: false,
       isGlutenFree: false,
     },
@@ -156,7 +156,7 @@ const Menu = () => {
       price: 11,
       image:
         "https://github.com/Kolivk3/StreetFood/blob/main/vpav.jpg?raw=true",
-      cuisine: "Italian",
+      cuisine: "pav",
       isVegan: false,
       isGlutenFree: false,
     },
@@ -231,8 +231,8 @@ const Menu = () => {
           onChange={(e) => setSelectedCuisine(e.target.value)}
         >
           <option value="">All Cuisines</option>
-          <option value="Italian">Italian</option>
-          <option value="American">American</option>
+          <option value="pav">Pav Based</option>
+          <option value="fry">Fried</option>
         </select>
 
         <select
@@ -253,7 +253,7 @@ const Menu = () => {
             checked={isVegan}
             onChange={() => setIsVegan(!isVegan)}
           />
-          Vegan Only
+          Chaat Items
         </label>
 
         <label>
@@ -262,7 +262,7 @@ const Menu = () => {
             checked={isGlutenFree}
             onChange={() => setIsGlutenFree(!isGlutenFree)}
           />
-          Gluten-Free Only
+          Sweet
         </label>
       </div>
 
